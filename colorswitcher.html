@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour switcher</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+           
+        }
+       button{
+        height:50px;
+        width:50px;
+        border-radius: 30%;
+        border:solid 1px transparent;
+        margin-left: 20px;
+        margin-top: 200px;
+       }
+    </style>
+</head>
+<body id="body">
+   
+    <button id="white" style="background-color:white;margin-left:-20px"></button>
+    <button id="yellow" style="background-color:yellow"></button>
+    <button id="blue" style="background-color:blue"></button>
+    <button id="red" style="background-color:red"></button>
+    <button id="green" style="background-color:green"></button>
+    <button id="purple" style="background-color:purple"></button>
+    <button id="gray" style="background-color:gray"></button>
+    <button id="brown" style="background-color:rgb(117, 17, 17)"></button>
+   
+<script>
+    document.getElementById('yellow').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='yellow'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('blue').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='blue'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('green').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='green'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('red').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='red'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('white').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='white'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('purple').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='purple'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('gray').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='gray'
+        colorDiv.style.backgroundColor = color;
+    });
+    document.getElementById('brown').addEventListener('click', function() {
+        var colorDiv = document.getElementById('body');
+        var color='rgb(117, 17, 17)'
+        colorDiv.style.backgroundColor = color;
+    });
+
+</script>
+</body>
+</html>
